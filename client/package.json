@@ -1,5 +1,14 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "private": true
+  "private": true,
+  "proxy": "localhost:5000",
+  "scripts": {
+    "start": "concurrently \"sudo npm start\" && \"cd ...; sudo npm start\""
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.3.0"
+  }
 }
